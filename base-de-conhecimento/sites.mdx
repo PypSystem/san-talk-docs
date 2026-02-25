@@ -1,0 +1,41 @@
+---
+title: "Sites"
+description: "Indexe conteúdo de sites para a IA consultar."
+---
+
+Você pode adicionar URLs de sites para que o SAN Talk AI extraia e indexe o conteúdo automaticamente. O sistema faz crawling das páginas e processa o texto encontrado.
+
+## Como funciona
+
+1. Você informa a URL do site
+2. O sistema faz crawling (rastreamento) de todas as páginas acessíveis
+3. O texto extraído é processado e indexado no banco vetorial
+4. A IA passa a usar o conteúdo do site em suas respostas
+
+## Adicionando um site
+
+<Steps>
+  <Step title="Acesse a base de conhecimento">
+    No Dashboard, vá em **Base de conhecimento > Sites**.
+  </Step>
+  <Step title="Informe a URL">
+    Cole a URL do site que deseja indexar.
+  </Step>
+  <Step title="Configure a audiência">
+    Defina para qual audiência o conteúdo é relevante (ai_agent, copilot, strategist).
+  </Step>
+  <Step title="Inicie o crawling">
+    O sistema vai rastrear as páginas e indexar o conteúdo. O número de páginas rastreadas não tem limite definido.
+  </Step>
+</Steps>
+
+## Casos de uso
+
+- **Site institucional** — informações sobre a empresa, equipe e história
+- **Blog** — artigos e conteúdo educacional
+- **Central de ajuda** — FAQ e tutoriais existentes
+- **Catálogo online** — descrições de produtos e serviços
+
+<Note>
+  O crawling respeita o `robots.txt` do site. Páginas protegidas por login não serão acessíveis.
+</Note>

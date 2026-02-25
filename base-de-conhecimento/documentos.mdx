@@ -1,0 +1,59 @@
+---
+title: "Documentos"
+description: "Adicione documentos à base de conhecimento para a IA consultar."
+---
+
+Documentos são arquivos (PDF, DOCX, etc.) que contêm informações sobre sua empresa, produtos, políticas e procedimentos. O sistema extrai o texto, divide em chunks e indexa para busca semântica.
+
+## Formatos suportados
+
+- PDF
+- DOCX
+- TXT
+
+## Limites
+
+- Até **10 arquivos** por upload
+- Máximo de **100MB** por arquivo
+
+## Adicionando documentos
+
+<Steps>
+  <Step title="Acesse a base de conhecimento">
+    No Dashboard, vá em **Base de conhecimento > Documentos**.
+  </Step>
+  <Step title="Faça upload">
+    Arraste os arquivos ou clique para selecionar. Você pode enviar múltiplos arquivos de uma vez.
+  </Step>
+  <Step title="Configure metadados">
+    Defina o título, categoria e audiência para cada documento.
+  </Step>
+  <Step title="Aguarde o processamento">
+    O sistema extrai o texto, divide em chunks e gera os embeddings. Isso pode levar alguns minutos dependendo do tamanho do arquivo.
+  </Step>
+</Steps>
+
+## Organização em pastas
+
+Crie pastas para organizar seus documentos por tema:
+
+```
+📁 Políticas
+  📄 Política de devolução.pdf
+  📄 Termos de uso.pdf
+📁 Produtos
+  📄 Catálogo 2026.pdf
+  📄 Manual do produto X.pdf
+📁 Treinamento
+  📄 Script de atendimento.docx
+```
+
+## Gerenciamento
+
+- **Visualizar texto extraído** — confira o que a IA "enxerga" de cada documento
+- **Excluir documentos** — a exclusão é assíncrona e remove o conteúdo do banco vetorial
+- **Atualizar** — substitua o arquivo para reprocessar o conteúdo
+
+<Warning>
+  Ao excluir um documento, os chunks correspondentes são removidos do banco vetorial. A IA deixará de usar essas informações em respostas futuras.
+</Warning>

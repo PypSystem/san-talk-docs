@@ -1,0 +1,37 @@
+---
+title: "Campos de qualificação"
+sidebarTitle: "Qualificação"
+description: "Colete dados estruturados dos clientes durante o atendimento."
+---
+
+Os campos de qualificação permitem coletar informações estruturadas dos clientes durante as conversas. O agente de IA pode solicitar esses dados automaticamente conforme configurado.
+
+## Configuração
+
+No Dashboard, acesse **Operações > Campos de qualificação**:
+
+- **Criar campos** — defina quais informações coletar (nome, e-mail, CPF, etc.)
+- **Tipos de campo** — texto, número, seleção, data
+- **Ordenar** — defina a sequência em que os campos são solicitados
+- **Obrigatoriedade** — marque campos como obrigatórios ou opcionais
+
+## Exemplo
+
+| Campo | Tipo | Obrigatório |
+|-------|------|-------------|
+| Nome completo | Texto | Sim |
+| E-mail | Texto | Sim |
+| Interesse | Seleção (Produto A, B, C) | Sim |
+| Observações | Texto | Não |
+
+## Como funciona na prática
+
+O agente de IA coleta os dados de forma natural durante a conversa, sem parecer um formulário. Exemplo:
+
+> **IA:** Ótimo, para eu te ajudar melhor, pode me dizer seu nome completo?
+> **Cliente:** João Silva
+> **IA:** Obrigado, João! E qual seu e-mail para contato?
+
+<Tip>
+  Mantenha poucos campos obrigatórios para não frustrar o cliente. Colete apenas o essencial e use campos opcionais para informações complementares.
+</Tip>

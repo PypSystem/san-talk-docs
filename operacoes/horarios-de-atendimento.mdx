@@ -1,0 +1,35 @@
+---
+title: "Horários de atendimento"
+sidebarTitle: "Horários"
+description: "Configure os dias e horários em que sua equipe está disponível."
+---
+
+Os horários de atendimento definem quando sua equipe está disponível para atender. Fora desses horários, o [atendente passivo](/atendimento/atendente-passivo) assume automaticamente.
+
+## Configuração
+
+No Dashboard, acesse **Operações > Horários de atendimento**:
+
+1. **Selecione o fuso horário** da sua operação
+2. **Defina os horários** para cada dia da semana
+3. **Configure intervalos** — você pode ter múltiplos períodos no mesmo dia (ex: 8h-12h e 14h-18h)
+
+## Exemplo
+
+| Dia | Horário |
+|-----|---------|
+| Segunda a sexta | 08:00 - 12:00, 14:00 - 18:00 |
+| Sábado | 09:00 - 13:00 |
+| Domingo | Fechado |
+
+## Comportamento fora do expediente
+
+Quando uma mensagem chega fora do horário configurado:
+
+1. O sistema verifica se o [atendente passivo](/atendimento/atendente-passivo) está ativo
+2. Se ativo, a IA assume a conversa automaticamente
+3. Se inativo, a mensagem fica pendente para o próximo horário de atendimento
+
+<Tip>
+  Configure horários diferentes por entidade. Uma loja no centro pode ter horário diferente de uma filial no shopping.
+</Tip>

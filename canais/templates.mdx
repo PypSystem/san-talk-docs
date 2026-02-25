@@ -1,0 +1,51 @@
+---
+title: "Templates de WhatsApp"
+sidebarTitle: "Templates"
+description: "Crie e gerencie templates de mensagem aprovados pela Meta."
+---
+
+Templates são modelos de mensagem que precisam ser aprovados pela Meta antes de serem usados para iniciar conversas ou enviar campanhas via WABA.
+
+## Por que usar templates?
+
+A Meta exige que toda conversa iniciada por uma empresa (sem que o cliente tenha enviado mensagem antes) use um template aprovado. Isso inclui:
+
+- Campanhas de marketing
+- Notificações e alertas
+- Mensagens de follow-up após 24h
+
+## Criando um template
+
+<Steps>
+  <Step title="Acesse Templates no Dashboard">
+    Vá em **Canais > Templates** e clique em **Criar template**.
+  </Step>
+  <Step title="Defina o conteúdo">
+    Escreva o texto do template. Use variáveis como `{{1}}`, `{{2}}` para campos dinâmicos (nome do cliente, número do pedido, etc.).
+  </Step>
+  <Step title="Configure botões (opcional)">
+    Adicione botões de resposta rápida ou links.
+  </Step>
+  <Step title="Selecione o idioma">
+    Defina o idioma principal do template.
+  </Step>
+  <Step title="Envie para aprovação">
+    O template é enviado à Meta para revisão. A aprovação geralmente leva de minutos a poucas horas.
+  </Step>
+</Steps>
+
+## Status do template
+
+| Status | Descrição |
+|--------|-----------|
+| **Pendente** | Aguardando aprovação da Meta |
+| **Aprovado** | Pronto para uso |
+| **Rejeitado** | Não aprovado — revise e reenvie |
+
+## Sincronização
+
+Se você já tem templates criados no Meta Business Manager, o SAN Talk AI sincroniza automaticamente. Clique em **Sincronizar templates** para atualizar a lista.
+
+<Warning>
+  Templates rejeitados pela Meta geralmente violam políticas de conteúdo. Evite linguagem promocional excessiva, informações enganosas ou conteúdo sensível.
+</Warning>

@@ -1,0 +1,49 @@
+---
+title: "WhatsApp Business (WABA)"
+sidebarTitle: "WhatsApp Business"
+description: "Conecte o WhatsApp Business Account via API oficial da Meta."
+---
+
+O canal WABA (WhatsApp Business Account) usa a API oficial da Meta (Cloud API) para enviar e receber mensagens. É a opção recomendada para operações em produção com alto volume.
+
+## Vantagens sobre o WhatsApp Web
+
+| Aspecto | WhatsApp Web (ROOKIE) | WABA |
+|---------|----------------------|------|
+| **Conexão** | QR Code / Pareamento | OAuth da Meta |
+| **Estabilidade** | Pode cair | API oficial, estável |
+| **Volume** | Limitado | Alto volume |
+| **Templates** | Não suporta | Suporta templates aprovados |
+| **Qualidade** | Sem monitoramento | Rating de qualidade da Meta |
+
+## Configuração
+
+<Steps>
+  <Step title="Inicie a configuração">
+    No Dashboard, vá em **Canais** e selecione **WhatsApp Business (WABA)**.
+  </Step>
+  <Step title="Autentique com a Meta">
+    O sistema inicia o fluxo OAuth integrado. Faça login com sua conta Meta Business.
+  </Step>
+  <Step title="Selecione o número">
+    Escolha o número de telefone que deseja conectar ao SAN Talk AI.
+  </Step>
+  <Step title="Confirme a conexão">
+    Após a confirmação, o canal ficará ativo e pronto para uso.
+  </Step>
+</Steps>
+
+## Funcionalidades exclusivas
+
+### Templates de mensagem
+Com o WABA, você pode usar [templates aprovados pela Meta](/canais/templates) para iniciar conversas e enviar campanhas.
+
+### Rating de qualidade
+A Meta atribui uma nota de qualidade ao seu número. O SAN Talk AI monitora esse rating e exibe no Dashboard.
+
+### Sincronização de templates
+Os templates criados no Meta Business Manager são sincronizados automaticamente com o SAN Talk AI.
+
+<Tip>
+  Mantenha o rating de qualidade alto respondendo rapidamente e evitando mensagens consideradas spam. Um rating baixo pode limitar o volume de envios.
+</Tip>

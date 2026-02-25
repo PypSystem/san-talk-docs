@@ -1,68 +1,122 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "SAN Talk AI",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#004bad",
+    "light": "#1875f0",
+    "dark": "#003d8f"
+  },
+  "appearance": {
+    "default": "light"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Documentação",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Primeiros passos",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "introduction",
+              "quickstart"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Atendimento",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "atendimento/visao-geral",
+              "atendimento/conversas",
+              "atendimento/copilot",
+              "atendimento/atendente-passivo",
+              "atendimento/widget-de-chat"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Campanhas",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "campanhas/criar-e-gerenciar",
+              "campanhas/metricas"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Base de conhecimento",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "base-de-conhecimento/visao-geral",
+              "base-de-conhecimento/documentos",
+              "base-de-conhecimento/perguntas-e-respostas",
+              "base-de-conhecimento/sites"
+            ]
+          },
+          {
+            "group": "Canais",
+            "pages": [
+              "canais/whatsapp",
+              "canais/whatsapp-business",
+              "canais/templates"
+            ]
+          },
+          {
+            "group": "Contatos",
+            "pages": [
+              "contatos/gerenciar-contatos"
+            ]
+          },
+          {
+            "group": "IA e personalidade",
+            "pages": [
+              "ia-e-personalidade/personalidade",
+              "ia-e-personalidade/compliance",
+              "ia-e-personalidade/diretrizes"
+            ]
+          },
+          {
+            "group": "Operações",
+            "pages": [
+              "operacoes/horarios-de-atendimento",
+              "operacoes/roteamento",
+              "operacoes/campos-de-qualificacao"
+            ]
+          },
+          {
+            "group": "Avaliação e feedback",
+            "pages": [
+              "avaliacao/conversas",
+              "avaliacao/atendentes"
+            ]
+          },
+          {
+            "group": "Administração",
+            "pages": [
+              "administracao/empresas-e-entidades",
+              "administracao/usuarios-e-permissoes"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "API Reference",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Visão geral",
             "pages": [
               "api-reference/introduction"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Conceitos",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "concepts/authentication",
+              "concepts/rag",
+              "concepts/errors"
+            ]
+          },
+          {
+            "group": "Endpoints",
+            "pages": [
+              "api-reference/endpoint/status",
+              "api-reference/endpoint/rag-retrieve"
             ]
           }
         ]
@@ -71,14 +125,9 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "API Reference",
+          "href": "/api-reference/introduction",
+          "icon": "code"
         }
       ]
     }
@@ -88,35 +137,31 @@
     "dark": "/logo/dark.svg"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://talk.saninternet.com"
     }
   },
+  "api": {
+    "baseUrl": "https://api-talk.saninternet.com/v1",
+    "auth": {
+      "method": "bearer",
+      "name": "Authorization"
+    }
+  },
+  "openapi": ["/api-reference/openapi.json"],
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude"
+    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "website": "https://talk.saninternet.com"
     }
   }
 }
