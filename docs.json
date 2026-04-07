@@ -30,7 +30,8 @@
               "atendimento/conversas",
               "atendimento/copilot",
               "atendimento/atendente-passivo",
-              "atendimento/widget-de-chat"
+              "atendimento/widget-de-chat",
+              "atendimento/mensagens-rapidas"
             ]
           },
           {
