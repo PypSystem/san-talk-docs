@@ -76,6 +76,7 @@
             "group": "Operações",
             "pages": [
               "operacoes/horarios-de-atendimento",
+              "operacoes/sla",
               "operacoes/roteamento",
               "operacoes/campos-de-qualificacao"
             ]
