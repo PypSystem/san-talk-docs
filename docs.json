@@ -53,8 +53,11 @@
           {
             "group": "Canais",
             "pages": [
-              "canais/whatsapp",
+              "canais/waba-onboarding",
+              "canais/waba-bsp",
               "canais/whatsapp-business",
+              "canais/waba-troubleshooting",
+              "canais/whatsapp",
               "canais/templates"
             ]
           },

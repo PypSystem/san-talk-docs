@@ -1,0 +1,70 @@
+---
+title: "Como obter um número WABA"
+sidebarTitle: "Obter número WABA"
+description: "Caminhos para registrar um número no WhatsApp Business API: Embedded Signup ou parceiro autorizado (BSP)."
+---
+
+A Meta não vende números diretamente. Para registrar um número no WhatsApp Business API, você tem dois caminhos: usar o **Embedded Signup** da própria Meta (Cloud API) ou contratar um **BSP** (Business Solution Provider) autorizado.
+
+## O que é um BSP
+
+Um **Business Solution Provider** é uma empresa autorizada pela Meta a provisionar números, intermediar billing e oferecer suporte técnico para o WhatsApp Business API. Antes da Cloud API, era o único caminho disponível. Hoje, é uma opção válida quando você prefere pagar em real, ter suporte em português ou portar um número existente.
+
+## Caminho 1 — Embedded Signup (Meta Cloud API)
+
+A própria Meta oferece um fluxo de cadastro simplificado em que você registra um número diretamente, sem intermediários.
+
+**Quando faz sentido:**
+- Você quer pagar a Meta diretamente (em dólar, via cartão internacional)
+- Precisa de um número novo (não vai portar um existente)
+- Já tem a empresa verificada no Meta Business
+
+**Requisitos:**
+- Conta Meta Business com verificação de empresa concluída
+- WhatsApp Business Account criada
+- Número de telefone disponível (não usado em outro WhatsApp)
+
+<Tip>
+  O Embedded Signup é geralmente o caminho mais rápido para quem já tem a Meta Business pronta. O fluxo OAuth do SAN Talk inclui esse cadastro como parte da conexão.
+</Tip>
+
+## Caminho 2 — Contratar um BSP
+
+Se você prefere faturamento em BRL, suporte local ou precisa portar um número que já usa, contrate um parceiro autorizado.
+
+> Para consultar a lista atualizada de parceiros autorizados pela Meta, acesse o **[Partner Showcase oficial da Meta](https://business.facebook.com/messaging/partner-showcase)** e filtre por região e tipo de serviço.
+
+**Critérios para escolher um BSP:**
+- Suporte em português
+- Presença no Brasil (faturamento em BRL, emissão de NF)
+- Modelo de cobrança (mensalidade fixa vs. por conversa)
+- Capacidade de portar um número existente
+- Reputação e tempo de resposta do suporte
+
+### Passo a passo genérico
+
+<Steps>
+  <Step title="Escolher o BSP">
+    Compare opções no Partner Showcase da Meta com base nos critérios acima.
+  </Step>
+  <Step title="Cadastro e verificação da empresa">
+    O BSP solicitará dados da empresa (CNPJ, contrato social, comprovantes) e fará a verificação junto à Meta, se ainda não tiver sido feita.
+  </Step>
+  <Step title="Provisionar o número">
+    Você pode contratar um número novo com o BSP ou portar um número existente. A portabilidade exige que o número seja desvinculado do app atual.
+  </Step>
+  <Step title="Receber acesso pela Meta Business">
+    Concluído o provisionamento, o número aparece em **WhatsApp Manager → Números** dentro da sua conta Meta Business.
+  </Step>
+  <Step title="Conectar no SAN Talk">
+    Com o número disponível, siga para [Conectar WhatsApp Business](/canais/whatsapp-business).
+  </Step>
+</Steps>
+
+<Warning>
+  O processo completo (verificação + provisionamento + portabilidade) pode levar de poucos dias a algumas semanas, dependendo do BSP e da disponibilidade dos documentos. Planeje com folga.
+</Warning>
+
+## Dúvidas comuns
+
+Se durante a conexão no SAN Talk algo não funcionar como esperado, consulte o [Troubleshooting WABA](/canais/waba-troubleshooting).
