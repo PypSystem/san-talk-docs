@@ -1,18 +1,26 @@
 ---
 title: "Horários de atendimento"
 sidebarTitle: "Horários"
-description: "Configure os dias e horários em que sua equipe está disponível."
+description: "Defina quando sua equipe atende. Fora do expediente, a IA cuida de tudo."
 ---
 
-Os horários de atendimento definem quando sua equipe está disponível para atender. Fora desses horários, o [atendente passivo](/atendimento/atendente-passivo) assume automaticamente.
+Os horários de atendimento definem quando sua equipe está disponível. Fora desses horários, o [atendente passivo](/atendimento/atendente-passivo) assume automaticamente, garantindo que nenhum cliente fique sem resposta.
 
 ## Configuração
 
 No Dashboard, acesse **Operações > Horários de atendimento**:
 
-1. **Selecione o fuso horário** da sua operação
-2. **Defina os horários** para cada dia da semana
-3. **Configure intervalos** — você pode ter múltiplos períodos no mesmo dia (ex: 8h-12h e 14h-18h)
+<Steps>
+  <Step title="Selecione o fuso horário">
+    Escolha o fuso horário da sua operação.
+  </Step>
+  <Step title="Defina os horários">
+    Configure o horário de início e fim para cada dia da semana.
+  </Step>
+  <Step title="Configure intervalos (opcional)">
+    Você pode ter múltiplos períodos no mesmo dia, por exemplo, 8h-12h e 14h-18h (com pausa para almoço).
+  </Step>
+</Steps>
 
 ## Exemplo
 
@@ -22,14 +30,21 @@ No Dashboard, acesse **Operações > Horários de atendimento**:
 | Sábado | 09:00 - 13:00 |
 | Domingo | Fechado |
 
-## Comportamento fora do expediente
+## O que acontece fora do expediente?
 
-Quando uma mensagem chega fora do horário configurado:
-
-1. O sistema verifica se o [atendente passivo](/atendimento/atendente-passivo) está ativo
-2. Se ativo, a IA assume a conversa automaticamente
-3. Se inativo, a mensagem fica pendente para o próximo horário de atendimento
+<AccordionGroup>
+  <Accordion title="Com atendente passivo ativo">
+    A IA assume e responde o cliente com o conhecimento e a personalidade da sua empresa. O cliente é atendido normalmente, sem perceber que não é horário comercial.
+  </Accordion>
+  <Accordion title="Com atendente passivo desativado">
+    A mensagem fica pendente e será atendida no próximo horário de expediente.
+  </Accordion>
+</AccordionGroup>
 
 <Tip>
-  Configure horários diferentes por entidade. Uma loja no centro pode ter horário diferente de uma filial no shopping.
+  Configure horários diferentes por unidade. Uma loja no centro pode ter horário diferente de uma filial no shopping.
 </Tip>
+
+<Note>
+  Os horários de atendimento também afetam o [SLA](/operacoes/sla): o timer de SLA só conta dentro do expediente configurado.
+</Note>

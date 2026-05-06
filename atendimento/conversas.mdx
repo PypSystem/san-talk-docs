@@ -1,35 +1,33 @@
 ---
 title: "Conversas"
-description: "Gerencie conversas com clientes em tempo real."
+description: "O centro do seu atendimento: gerencie todas as interações com clientes em tempo real."
 ---
 
-As conversas são o centro do atendimento no SAN Talk AI. Cada conversa representa uma interação entre um cliente e sua empresa, podendo ser atendida por um agente de IA ou por um atendente humano.
+As conversas são o centro do atendimento no Talk AI. Cada conversa representa uma interação entre um cliente e sua empresa, podendo ser atendida pela IA ou por um atendente humano, com histórico completo e controle total.
 
 ## Ciclo de vida de uma conversa
 
-Uma conversa passa pelos seguintes estados:
-
-1. **Criada** — o cliente envia a primeira mensagem
-2. **Em atendimento** — atribuída a um atendente ou agente de IA
-3. **Finalizada** — encerrada com um motivo de fechamento
+1. **Criada**: o cliente envia a primeira mensagem
+2. **Em atendimento**: atribuída a um atendente ou ao agente de IA
+3. **Finalizada**: encerrada com um motivo de fechamento que alimenta suas métricas
 
 ## Gerenciando conversas
 
-### Criar uma conversa
-
-Conversas são criadas automaticamente quando um cliente envia uma mensagem. Você também pode iniciar uma conversa proativamente a partir da lista de contatos.
-
-### Atribuir a um atendente
-
-Conversas podem ser atribuídas manualmente a um atendente específico ou distribuídas automaticamente com base nos [critérios de roteamento](/operacoes/roteamento).
-
-### Finalizar uma conversa
-
-Ao encerrar uma conversa, selecione um motivo de fechamento para manter o histórico organizado e alimentar as métricas de atendimento.
+<AccordionGroup>
+  <Accordion title="Criar uma conversa">
+    Conversas são criadas automaticamente quando um cliente envia mensagem. Você também pode iniciar uma conversa proativamente a partir da lista de contatos.
+  </Accordion>
+  <Accordion title="Atribuir a um atendente">
+    Conversas podem ser atribuídas manualmente ou distribuídas automaticamente com base nos [critérios de roteamento](/operacoes/roteamento).
+  </Accordion>
+  <Accordion title="Finalizar uma conversa">
+    Ao encerrar, selecione um motivo de fechamento para manter o histórico organizado e alimentar as métricas de atendimento.
+  </Accordion>
+</AccordionGroup>
 
 ## Histórico de mensagens
 
-Todas as mensagens trocadas ficam registradas no histórico da conversa, incluindo:
+Todas as mensagens ficam registradas no histórico da conversa:
 
 - Mensagens de texto, áudio, imagem e documentos
 - Reações a mensagens
@@ -46,10 +44,10 @@ Todas as mensagens trocadas ficam registradas no histórico da conversa, incluin
 | **Mídia** | Envie e receba imagens, áudios e documentos |
 | **Presença** | Veja quando o cliente está digitando ou gravando áudio |
 | **Timeout** | Conversas expiram automaticamente após período de inatividade |
-| **SLA** | Badge com tempo decorrido em conversas que têm SLA ativo — verde, amarelo ou vermelho conforme o status |
+| **SLA** | Indicador colorido com tempo decorrido: verde, amarelo ou vermelho conforme o prazo |
 
 <Note>
-  Quando o [SLA de atendimento](/operacoes/sla) está configurado, conversas transferidas para humanos exibem um relógio colorido indicando o tempo até a primeira resposta.
+  Quando o [SLA de atendimento](/operacoes/sla) está configurado, conversas transferidas para humanos exibem um relógio indicando o tempo até a primeira resposta.
 </Note>
 
 <Tip>

@@ -1,54 +1,49 @@
 ---
 title: "Usuários e permissões"
 sidebarTitle: "Usuários"
-description: "Gerencie usuários e controle acessos com diferentes níveis de permissão."
+description: "Gerencie sua equipe e controle quem pode fazer o quê na plataforma."
 ---
 
-O SAN Talk AI possui um sistema de permissões baseado em papéis (roles) que controla o que cada usuário pode ver e fazer na plataforma.
+O Talk AI possui um sistema de permissões baseado em papéis que dá a você controle total sobre o que cada membro da equipe pode ver e fazer.
 
 ## Papéis disponíveis
 
-### Nível global
-| Papel | Descrição |
-|-------|-----------|
-| **System Admin** | Acesso total a todas as empresas e funcionalidades |
-
 ### Nível de empresa
-| Papel | Descrição |
-|-------|-----------|
-| **Owner** | Proprietário da empresa. Gerencia assinaturas, API keys e configurações globais |
-| **Manager** | Gestor com acesso a métricas, avaliações e configurações operacionais |
+| Papel | O que pode fazer |
+|-------|------------------|
+| **Proprietário** | Acesso total. Gerencia assinaturas, API keys e configurações globais |
+| **Gerente** | Acessa métricas, avaliações e configurações operacionais |
 
-### Nível de entidade
-| Papel | Descrição |
-|-------|-----------|
-| **Admin** | Administrador da entidade. Gerencia atendentes, canais e configurações |
-| **Attendant** | Atendente. Acessa conversas e usa o Copilot |
+### Nível de unidade
+| Papel | O que pode fazer |
+|-------|------------------|
+| **Administrador** | Gerencia atendentes, canais e configurações da unidade |
+| **Atendente** | Acessa conversas e usa o Copilot para atender clientes |
 
 ## Gerenciamento de usuários
 
 No Dashboard, acesse **Administração > Usuários**:
 
-- **Convidar usuários** — adicione novos membros à equipe
-- **Atribuir papéis** — defina o papel em cada nível (empresa, classe, entidade)
-- **Filtrar por papel** — encontre rapidamente usuários por tipo de acesso
-- **Alterar senhas** — redefina senhas de usuários
-- **Desativar** — remova o acesso de usuários que saíram da equipe
+- **Convidar usuários**: adicione novos membros à equipe
+- **Atribuir papéis**: defina o papel em cada nível (empresa, área, unidade)
+- **Filtrar por papel**: encontre rapidamente usuários por tipo de acesso
+- **Alterar senhas**: redefina senhas de usuários
+- **Desativar**: remova o acesso de usuários que saíram da equipe
 
-## Permissões por papel
+## O que cada papel pode acessar
 
-| Funcionalidade | Owner | Manager | Admin | Attendant |
-|----------------|-------|---------|-------|-----------|
+| Funcionalidade | Proprietário | Gerente | Administrador | Atendente |
+|----------------|:------------:|:-------:|:-------------:|:---------:|
 | Conversas | ✅ | ✅ | ✅ | ✅ |
 | Copilot | ✅ | ✅ | ✅ | ✅ |
-| Métricas | ✅ | ✅ | ✅ | ❌ |
-| Avaliações | ✅ | ✅ | ❌ | ❌ |
-| Campanhas | ✅ | ✅ | ✅ | ❌ |
-| Configurações de IA | ✅ | ✅ | ❌ | ❌ |
-| Gerenciar usuários | ✅ | ❌ | ✅ | ❌ |
-| API Keys | ✅ | ❌ | ❌ | ❌ |
-| Assinatura | ✅ | ❌ | ❌ | ❌ |
+| Métricas | ✅ | ✅ | ✅ | — |
+| Avaliações | ✅ | ✅ | — | — |
+| Campanhas | ✅ | ✅ | ✅ | — |
+| Configurações de IA | ✅ | ✅ | — | — |
+| Gerenciar usuários | ✅ | — | ✅ | — |
+| API Keys | ✅ | — | — | — |
+| Assinatura | ✅ | — | — | — |
 
 <Warning>
-  Apenas **Owners** podem gerar e revogar API keys. Mantenha o número de Owners reduzido para segurança.
+  Apenas **Proprietários** podem gerar e revogar API keys. Mantenha o número de Proprietários reduzido para segurança.
 </Warning>

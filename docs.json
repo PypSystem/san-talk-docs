@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "SAN Talk AI",
+  "name": "Talk AI",
   "colors": {
     "primary": "#004bad",
     "light": "#1875f0",
@@ -11,6 +11,12 @@
     "default": "light"
   },
   "favicon": "/favicon.svg",
+  "rounded": "relaxed",
+  "font": {
+    "headings": {
+      "weight": 700
+    }
+  },
   "navigation": {
     "tabs": [
       {
@@ -30,20 +36,16 @@
               "atendimento/conversas",
               "atendimento/copilot",
               "atendimento/atendente-passivo",
-              "atendimento/widget-de-chat",
-              "atendimento/mensagens-rapidas"
+              "atendimento/mensagens-rapidas",
+              "atendimento/widget-de-chat"
             ]
           },
           {
-            "group": "Campanhas",
+            "group": "Inteligência artificial",
             "pages": [
-              "campanhas/criar-e-gerenciar",
-              "campanhas/metricas"
-            ]
-          },
-          {
-            "group": "Base de conhecimento",
-            "pages": [
+              "ia-e-personalidade/personalidade",
+              "ia-e-personalidade/compliance",
+              "ia-e-personalidade/diretrizes",
               "base-de-conhecimento/visao-geral",
               "base-de-conhecimento/documentos",
               "base-de-conhecimento/perguntas-e-respostas",
@@ -53,26 +55,20 @@
           {
             "group": "Canais",
             "pages": [
-              "canais/waba-onboarding",
-              "canais/waba-bsp",
-              "canais/whatsapp-business",
-              "canais/waba-troubleshooting",
               "canais/whatsapp",
+              "canais/waba-onboarding",
+              "canais/whatsapp-business",
+              "canais/waba-bsp",
+              "canais/waba-troubleshooting",
               "canais/templates"
             ]
           },
           {
-            "group": "Contatos",
+            "group": "Campanhas e contatos",
             "pages": [
+              "campanhas/criar-e-gerenciar",
+              "campanhas/metricas",
               "contatos/gerenciar-contatos"
-            ]
-          },
-          {
-            "group": "IA e personalidade",
-            "pages": [
-              "ia-e-personalidade/personalidade",
-              "ia-e-personalidade/compliance",
-              "ia-e-personalidade/diretrizes"
             ]
           },
           {
@@ -85,17 +81,12 @@
             ]
           },
           {
-            "group": "Avaliação e feedback",
+            "group": "Gestão",
             "pages": [
+              "administracao/empresas-e-unidades",
+              "administracao/usuarios-e-permissoes",
               "avaliacao/conversas",
               "avaliacao/atendentes"
-            ]
-          },
-          {
-            "group": "Administração",
-            "pages": [
-              "administracao/empresas-e-entidades",
-              "administracao/usuarios-e-permissoes"
             ]
           }
         ]
@@ -144,8 +135,8 @@
   "navbar": {
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://talk.saninternet.com"
+      "label": "Acessar",
+      "href": "https://talk.saninternet.com/login"
     }
   },
   "api": {
@@ -163,6 +154,10 @@
       "chatgpt",
       "claude"
     ]
+  },
+  "feedback": {
+    "suggestEdit": true,
+    "raiseIssue": true
   },
   "footer": {
     "socials": {

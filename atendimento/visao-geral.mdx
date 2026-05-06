@@ -1,64 +1,74 @@
 ---
 title: "Visão geral do atendimento"
 sidebarTitle: "Visão geral"
-description: "Entenda como funciona o fluxo de atendimento no SAN Talk AI."
+description: "Atendimento inteligente que combina IA e humanos para a melhor experiência do cliente."
 ---
 
-O SAN Talk AI oferece um sistema completo de atendimento ao cliente que combina inteligência artificial com atendentes humanos. As conversas chegam via WhatsApp e são roteadas automaticamente conforme as regras configuradas.
+O Talk AI combina inteligência artificial com atendentes humanos para que nenhum cliente fique sem resposta. A IA cuida das conversas automáticas com o conhecimento da sua empresa, e quando precisa de um toque humano, transfere com todo o contexto.
 
 ## Como funciona o fluxo
 
-```mermaid
-flowchart TD
-    A[Cliente envia mensagem] --> B{Horário de atendimento?}
-    B -->|Sim| C{Critérios de roteamento}
-    B -->|Não| D[Atendente passivo]
-    C -->|Automático| E[Agente de IA]
-    C -->|Manual| F[Fila de atendentes]
-    E -->|Transferência| F
-    F --> G[Atendente humano + Copilot]
-    D --> H[Resposta automática fora do expediente]
-    E --> I[Resposta ao cliente]
-    G --> I
-```
+<Steps>
+  <Step title="Cliente envia mensagem">
+    A mensagem chega ao Talk AI pelo canal que o cliente escolheu usar.
+  </Step>
+  <Step title="Verificação de horário">
+    Dentro do expediente, a conversa segue o fluxo normal. Fora do horário, o [atendente passivo](/atendimento/atendente-passivo) assume, garantindo atendimento 24/7.
+  </Step>
+  <Step title="Roteamento inteligente">
+    A conversa é direcionada para o agente de IA ou para a fila de atendentes humanos, conforme os [critérios de roteamento](/operacoes/roteamento) que você configurou.
+  </Step>
+  <Step title="Atendimento com qualidade">
+    O agente de IA responde com o conhecimento da sua empresa. Se a conversa for transferida, o atendente humano conta com o suporte do [Copilot](/atendimento/copilot) para respostas mais rápidas e precisas.
+  </Step>
+</Steps>
 
-## Componentes do atendimento
+## Recursos do atendimento
 
 <CardGroup cols={2}>
   <Card title="Conversas" icon="message" href="/atendimento/conversas">
-    Gerencie conversas em tempo real, atribua a atendentes e acompanhe o histórico.
+    Gerencie conversas em tempo real, atribua a atendentes e acompanhe o histórico completo.
   </Card>
-  <Card title="Copilot" icon="user-astronaut" href="/atendimento/copilot">
-    Assistente de IA que ajuda atendentes humanos com sugestões em tempo real.
+  <Card title="Copilot" icon="wand-magic-sparkles" href="/atendimento/copilot">
+    Sugestões inteligentes em tempo real para seus atendentes responderem mais rápido.
   </Card>
   <Card title="Atendente passivo" icon="moon" href="/atendimento/atendente-passivo">
-    IA que atende automaticamente fora do horário de expediente.
+    IA que garante atendimento contínuo mesmo fora do horário de expediente.
+  </Card>
+  <Card title="Mensagens rápidas" icon="bolt" href="/atendimento/mensagens-rapidas">
+    Atalhos de texto para agilizar respostas recorrentes com um comando.
   </Card>
   <Card title="Widget de chat" icon="comment-dots" href="/atendimento/widget-de-chat">
-    Widget embutível para sites que conecta ao SAN Talk AI.
+    Atendimento direto no seu site, sem depender do WhatsApp.
   </Card>
 </CardGroup>
 
 ## Funcionalidades principais
 
-### Gerenciamento de conversas
-- Criar, listar e acompanhar conversas em tempo real
-- Atribuir conversas a atendentes específicos
-- Finalizar conversas com motivo de encerramento
-- Visualizar histórico completo de mensagens
+<AccordionGroup>
+  <Accordion title="Gerenciamento de conversas">
+    - Acompanhe todas as conversas em tempo real
+    - Atribua conversas a atendentes específicos
+    - Finalize com motivo de encerramento para alimentar métricas
+    - Histórico completo de todas as mensagens
+  </Accordion>
 
-### Multicanal
-- WhatsApp Web (via Evolution API)
-- WhatsApp Business Account (WABA - API oficial da Meta)
-- Widget de chat para sites
+  <Accordion title="Canais disponíveis">
+    - **WhatsApp**: conexão rápida via QR Code
+    - **WhatsApp Business (WABA)**: API oficial da Meta para alto volume
+    - **Widget de chat**: para visitantes do seu site
+  </Accordion>
 
-### Roteamento inteligente
-- Regras de roteamento configuráveis por prioridade
-- Distribuição automática entre atendentes
-- Transferência de IA para humano quando necessário
+  <Accordion title="Roteamento inteligente">
+    - Regras configuráveis por prioridade
+    - Distribuição automática entre atendentes
+    - Transferência automática de IA para humano quando necessário
+  </Accordion>
 
-### Mensagens
-- Texto, imagens, áudio e documentos
-- Reações a mensagens
-- Edição e exclusão de mensagens
-- Indicadores de presença (digitando, gravando áudio)
+  <Accordion title="Tipos de mensagem">
+    - Texto, imagens, áudio e documentos
+    - Reações a mensagens
+    - Edição e exclusão de mensagens
+    - Indicadores de presença (digitando, gravando áudio)
+  </Accordion>
+</AccordionGroup>

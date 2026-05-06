@@ -1,55 +1,52 @@
 ---
 title: "Base de conhecimento"
 sidebarTitle: "Visão geral"
-description: "Alimente a IA com conteúdo da sua empresa para respostas precisas e personalizadas."
+description: "Ensine a IA tudo sobre sua empresa para respostas precisas e personalizadas."
 ---
 
-A base de conhecimento é o coração da inteligência do SAN Talk AI. Todo conteúdo que você adiciona — documentos, perguntas frequentes e sites — é processado e transformado em embeddings vetoriais que a IA usa para gerar respostas fundamentadas.
+A base de conhecimento é o que transforma o Talk AI em um especialista no seu negócio. Todo conteúdo que você adiciona (documentos, perguntas frequentes e sites) é absorvido pela IA, que passa a dominar o assunto e responder seus clientes com a mesma precisão da sua melhor equipe.
 
 ## Como funciona
 
-```mermaid
-flowchart LR
-    A[Conteúdo] --> B[Processamento]
-    B --> C[Embeddings vetoriais]
-    C --> D[Banco vetorial]
-    D --> E[Busca semântica RAG]
-    E --> F[Resposta da IA]
-```
-
-1. Você adiciona conteúdo (documentos, Q&A ou sites)
-2. O sistema processa e divide em chunks (pedaços de texto)
-3. Cada chunk é convertido em um embedding (vetor numérico)
-4. Quando um cliente faz uma pergunta, o sistema busca os chunks mais relevantes
-5. A IA gera uma resposta baseada nos chunks encontrados
+<Steps>
+  <Step title="Você ensina a IA">
+    Faça upload de documentos, crie pares de pergunta e resposta ou adicione URLs do seu site.
+  </Step>
+  <Step title="A IA aprende">
+    O conteúdo é processado automaticamente. Em poucos minutos, a IA já domina as informações que você adicionou.
+  </Step>
+  <Step title="Clientes recebem respostas precisas">
+    Quando um cliente faz uma pergunta, a IA responde com base no que aprendeu, com naturalidade e sem inventar informações.
+  </Step>
+</Steps>
 
 ## Tipos de conteúdo
 
 <CardGroup cols={3}>
   <Card title="Documentos" icon="file-pdf" href="/base-de-conhecimento/documentos">
-    PDF, DOCX e outros formatos. Até 10 arquivos de 100MB cada.
+    PDF, DOCX e outros formatos. A IA lê e aprende o conteúdo inteiro.
   </Card>
   <Card title="Perguntas e respostas" icon="circle-question" href="/base-de-conhecimento/perguntas-e-respostas">
-    Pares de pergunta e resposta que a IA usa como referência direta.
+    Pares diretos de pergunta e resposta, ideal para FAQs e respostas padronizadas.
   </Card>
   <Card title="Sites" icon="globe" href="/base-de-conhecimento/sites">
-    URLs de sites que são rastreados e indexados automaticamente.
+    Adicione URLs e a IA aprende automaticamente o conteúdo de todas as páginas.
   </Card>
 </CardGroup>
 
 ## Organização
 
-O conteúdo pode ser organizado em **pastas hierárquicas** para manter tudo estruturado. Cada item possui:
+O conteúdo pode ser organizado em **pastas** para manter tudo estruturado. Cada item possui:
 
-- **Título** — identificação do conteúdo
-- **Categoria** — classificação do tipo de informação
-- **Audiência** — para quem o conteúdo é relevante:
+- **Título**: identificação do conteúdo
+- **Categoria**: classificação por tema
+- **Audiência**: define quem usa o conteúdo:
 
-| Audiência | Uso |
-|-----------|-----|
-| `ai_agent` | Agentes de IA que respondem clientes diretamente |
-| `copilot` | Copilot que auxilia atendentes humanos |
-| `strategist` | Análise estratégica e insights |
+| Audiência | Quando usar |
+|-----------|-------------|
+| **Agente de IA** | Para responder clientes diretamente nas conversas |
+| **Copilot** | Para ajudar atendentes humanos com sugestões inteligentes |
+| **Estrategista** | Para gerar análises e insights estratégicos |
 
 ## Estatísticas
 

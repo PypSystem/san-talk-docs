@@ -4,34 +4,41 @@ sidebarTitle: "Conversas"
 description: "Avalie a qualidade do atendimento com resumos gerados por IA."
 ---
 
-O sistema gera automaticamente resumos e avaliações das conversas, permitindo que gestores acompanhem a qualidade do atendimento sem ler cada conversa integralmente.
+O sistema gera automaticamente resumos e avaliações das conversas, permitindo que gestores acompanhem a qualidade do atendimento sem precisar ler cada conversa integralmente.
 
 ## Como funciona
 
-1. Uma conversa é finalizada
-2. A IA gera um resumo automático dos principais pontos
-3. O gestor pode revisar, concordar ou discordar da avaliação
-4. O feedback do gestor alimenta o sistema de calibração
+<Steps>
+  <Step title="Conversa é finalizada">
+    Quando uma conversa é encerrada, ela entra na fila de avaliação.
+  </Step>
+  <Step title="IA gera o resumo">
+    A IA analisa a conversa e gera um resumo automático com os principais pontos: motivo do contato, como foi resolvido e pontos de atenção.
+  </Step>
+  <Step title="Gestor revisa">
+    O gestor pode concordar, discordar ou adicionar observações à avaliação.
+  </Step>
+  <Step title="Sistema aprende">
+    O feedback dos gestores melhora continuamente a precisão das avaliações automáticas.
+  </Step>
+</Steps>
 
-## Funcionalidades
+## O que a IA avalia
 
-### Resumos automáticos
-Cada conversa recebe um resumo gerado pela IA que destaca:
-- Motivo do contato
-- Como foi resolvido
-- Pontos de atenção
+Cada conversa recebe um resumo que destaca:
 
-### Feedback do gestor (calibração)
-Gestores podem:
-- **Concordar** com a avaliação da IA
-- **Discordar** e fornecer sua própria avaliação
-- **Marcar como lida** para controle de revisão
+- **Motivo do contato**: por que o cliente entrou em contato
+- **Resolução**: como o problema foi resolvido (ou se ficou pendente)
+- **Pontos de atenção**: situações que merecem revisão do gestor
 
-Esse feedback melhora continuamente a precisão das avaliações automáticas.
+## Calibração
 
-### Histórico
-Todas as avaliações ficam registradas para consulta futura e análise de tendências.
+Gestores podem dar feedback sobre as avaliações da IA:
+
+- **Concordar**: a avaliação está correta
+- **Discordar**: fornecer uma avaliação diferente
+- **Marcar como lida**: para controle de revisão
 
 <Note>
-  A calibração é fundamental para melhorar a qualidade das avaliações automáticas. Quanto mais feedback os gestores fornecem, mais precisa a IA se torna.
+  Quanto mais feedback os gestores fornecem, mais precisa a IA se torna nas avaliações futuras. A calibração é fundamental para a qualidade do sistema.
 </Note>
