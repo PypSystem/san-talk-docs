@@ -42,11 +42,21 @@
             ]
           },
           {
-            "group": "Inteligência artificial",
+            "group": "Identidade",
             "pages": [
-              "ia-e-personalidade/personalidade",
-              "ia-e-personalidade/compliance",
+              "ia-e-personalidade/comunicacao",
               "ia-e-personalidade/diretrizes",
+              "ia-e-personalidade/compliance",
+              "ia-e-personalidade/esclarecimentos",
+              "operacoes/campos-de-qualificacao",
+              "operacoes/roteamento",
+              "operacoes/horarios-de-atendimento",
+              "ia-e-personalidade/contexto-situacional"
+            ]
+          },
+          {
+            "group": "Base de conhecimento",
+            "pages": [
               "base-de-conhecimento/visao-geral",
               "base-de-conhecimento/documentos",
               "base-de-conhecimento/perguntas-e-respostas",
@@ -73,12 +83,9 @@
             ]
           },
           {
-            "group": "Operações",
+            "group": "Configurações",
             "pages": [
-              "operacoes/horarios-de-atendimento",
-              "operacoes/sla",
-              "operacoes/roteamento",
-              "operacoes/campos-de-qualificacao"
+              "operacoes/sla"
             ]
           },
           {

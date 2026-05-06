@@ -1,46 +1,81 @@
 ---
-title: "Critérios de roteamento"
+title: "Roteamento"
 sidebarTitle: "Roteamento"
-description: "Conversas chegam automaticamente para o atendente certo, sem esforço manual."
+description: "Defina quando a IA transfere a conversa para um humano e os critérios para isso."
 ---
 
-Os critérios de roteamento garantem que cada conversa chegue ao atendente mais adequado automaticamente. Defina regras por prioridade e o sistema distribui as conversas para você.
+O roteamento define os critérios para transferência automática de conversas para atendentes humanos. Você configura as condições que determinam quando o agente de IA deve encaminhar o atendimento, e a IA avalia cada conversa em tempo real para tomar a decisão certa.
+
+Limite de até **7 critérios** de roteamento por conta.
+
+<Frame>
+  <img src="/images/roteamento-teste.png" alt="Roteamento com critérios configurados e painel de teste" />
+</Frame>
 
 ## Como funciona
 
 <Steps>
-  <Step title="Nova conversa chega">
-    O cliente envia uma mensagem e uma nova conversa é criada.
+  <Step title="IA avalia a conversa">
+    A cada mensagem do cliente, o agente de IA avalia se algum critério de roteamento se aplica.
   </Step>
-  <Step title="Avaliação automática">
-    O sistema percorre os critérios na ordem de prioridade até encontrar o mais adequado.
+  <Step title="Critério ativado">
+    Quando a conversa atende a um critério (ex: cliente demonstra insatisfação), a IA inicia a transferência.
   </Step>
-  <Step title="Atribuição instantânea">
-    A conversa é direcionada para o atendente ou grupo definido pelo critério, sem intervenção manual.
+  <Step title="Transferência com contexto">
+    O atendente humano recebe a conversa com todo o histórico e o motivo da transferência.
   </Step>
 </Steps>
 
 ## Configuração
 
-No Dashboard, acesse **Operações > Roteamento**:
+No Talk AI, acesse **Identidade > Operações > Roteamento**:
 
-- **Criar critérios**: defina regras de distribuição
-- **Ordenar por prioridade**: critérios de maior prioridade são avaliados primeiro
-- **Ativar/desativar**: controle quais critérios estão ativos
+<Steps>
+  <Step title="Escolha um modelo ou crie do zero">
+    Clique em **Adicionar critério**. Use um dos modelos prontos ou defina condições específicas para o seu negócio.
+  </Step>
+  <Step title="Descreva a condição">
+    Escreva em linguagem natural quando a transferência deve ocorrer. Quanto mais específico, mais preciso o roteamento.
+  </Step>
+  <Step title="Teste no Playground">
+    Use o painel **Testar Agente** para simular conversas e verificar se os critérios estão funcionando como esperado.
+  </Step>
+</Steps>
 
-## Exemplos de uso
+## Modelos prontos
+
+<Frame>
+  <img src="/images/roteamento-modelos.png" alt="Modelos prontos para critérios de roteamento" />
+</Frame>
+
+O Talk AI oferece modelos prontos para os cenários mais comuns de transferência:
 
 <AccordionGroup>
-  <Accordion title="Roteamento por especialidade">
-    Conversas sobre suporte técnico vão para atendentes especializados. Conversas comerciais vão para o time de vendas. Cada cliente é atendido por quem realmente entende do assunto.
+  <Accordion title="Insatisfação ou linguagem agressiva">
+    Transfere para um humano quando o cliente demonstrar frustração, insatisfação ou usar linguagem agressiva.
   </Accordion>
-  <Accordion title="Distribuição por volume">
-    Distribua conversas uniformemente entre os atendentes disponíveis para equilibrar a carga de trabalho e reduzir tempo de espera.
+  <Accordion title="Pagamento, cobrança ou faturamento">
+    Transfere quando o cliente perguntar sobre valores, faturas, segunda via de boleto ou questões de cobrança.
   </Accordion>
-  <Accordion title="Roteamento por horário">
-    Direcione para equipes diferentes conforme o turno, como equipe da manhã e equipe da tarde, por exemplo.
+  <Accordion title="Reembolso, estorno ou cancelamento">
+    Transfere quando o cliente solicitar devolução de valores, estorno de pagamento ou cancelamento de contrato.
+  </Accordion>
+  <Accordion title="Problemas técnicos ou fora do conhecimento">
+    Transfere quando o cliente reportar problemas que a IA não consegue resolver com as informações disponíveis.
+  </Accordion>
+  <Accordion title="Cliente solicita falar com humano">
+    Transfere imediatamente quando o cliente pede para falar com uma pessoa, sem tentar convencê-lo a continuar com a IA.
+  </Accordion>
+  <Accordion title="Urgência ou prazo crítico">
+    Transfere quando o cliente indicar uma situação urgente que requer ação imediata.
   </Accordion>
 </AccordionGroup>
+
+## Testar Agente
+
+O painel **Testar Agente** fica disponível ao lado da configuração de roteamento. Ele simula conversas reais para que você valide os critérios antes de ir ao vivo.
+
+Quando um critério é ativado durante o teste, o painel exibe um aviso indicando que em produção a conversa seria transferida, incluindo o motivo da transferência.
 
 <Tip>
   Combine critérios de roteamento com o [SLA de atendimento](/operacoes/sla) para garantir que conversas críticas sejam atendidas dentro do prazo.

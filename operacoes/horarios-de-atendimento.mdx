@@ -1,34 +1,54 @@
 ---
-title: "Horários de atendimento"
-sidebarTitle: "Horários"
-description: "Defina quando sua equipe atende. Fora do expediente, a IA cuida de tudo."
+title: "Disponibilidade"
+sidebarTitle: "Disponibilidade"
+description: "Configure os horários de funcionamento e o fuso horário da sua operação."
 ---
 
-Os horários de atendimento definem quando sua equipe está disponível. Fora desses horários, o [atendente passivo](/atendimento/atendente-passivo) assume automaticamente, garantindo que nenhum cliente fique sem resposta.
+A disponibilidade define quando sua equipe está online para atendimento. Fora desses horários, o [atendente passivo](/atendimento/atendente-passivo) assume automaticamente, garantindo que nenhum cliente fique sem resposta.
+
+<Frame>
+  <img src="/images/disponibilidade.png" alt="Configuração de disponibilidade com fuso horário e faixas de horário" />
+</Frame>
 
 ## Configuração
 
-No Dashboard, acesse **Operações > Horários de atendimento**:
+No Talk AI, acesse **Identidade > Operações > Disponibilidade**:
 
 <Steps>
-  <Step title="Selecione o fuso horário">
-    Escolha o fuso horário da sua operação.
+  <Step title="Defina o fuso horário">
+    Selecione o fuso horário base da sua operação. Todos os horários configurados seguirão essa referência.
   </Step>
-  <Step title="Defina os horários">
-    Configure o horário de início e fim para cada dia da semana.
+  <Step title="Configure as faixas de horário">
+    Clique em um dia da semana para definir os horários de início e fim. Você pode ter múltiplas faixas no mesmo dia (ex: 08:00-12:00 e 13:30-18:00).
   </Step>
-  <Step title="Configure intervalos (opcional)">
-    Você pode ter múltiplos períodos no mesmo dia, por exemplo, 8h-12h e 14h-18h (com pausa para almoço).
+  <Step title="Replique para outros dias">
+    Use **Seg-Sex** para copiar o horário de um dia para todos os dias úteis, ou **Todos** para replicar para a semana inteira.
   </Step>
 </Steps>
 
-## Exemplo
+## Fusos horários disponíveis
 
-| Dia | Horário |
-|-----|---------|
-| Segunda a sexta | 08:00 - 12:00, 14:00 - 18:00 |
-| Sábado | 09:00 - 13:00 |
-| Domingo | Fechado |
+| Fuso | GMT |
+|------|-----|
+| São Paulo | GMT-3 |
+| Fortaleza | GMT-3 |
+| Manaus | GMT-4 |
+| Cuiabá | GMT-4 |
+| Rio Branco | GMT-5 |
+| New York | GMT-5 |
+| Los Angeles | GMT-8 |
+| London | GMT+0 |
+| Lisbon | GMT+0 |
+
+## Exemplo de configuração
+
+| Dia | Faixas de horário |
+|-----|-------------------|
+| Segunda a sexta | 08:00-12:00 e 13:30-18:00 |
+| Sábado | Sem horário |
+| Domingo | Sem horário |
+
+O painel exibe um resumo com o número de **dias configurados** (ex: 5/7) e o total de **faixas de horário** ativas.
 
 ## O que acontece fora do expediente?
 
@@ -41,10 +61,6 @@ No Dashboard, acesse **Operações > Horários de atendimento**:
   </Accordion>
 </AccordionGroup>
 
-<Tip>
-  Configure horários diferentes por unidade. Uma loja no centro pode ter horário diferente de uma filial no shopping.
-</Tip>
-
 <Note>
-  Os horários de atendimento também afetam o [SLA](/operacoes/sla): o timer de SLA só conta dentro do expediente configurado.
+  Os horários de disponibilidade também afetam o [SLA](/operacoes/sla): o timer de SLA só conta dentro do expediente configurado.
 </Note>
