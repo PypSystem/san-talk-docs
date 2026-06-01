@@ -85,16 +85,42 @@
           {
             "group": "Configurações",
             "pages": [
+              "configuracoes/regras-de-conversa",
+              "configuracoes/pesquisa-de-satisfacao",
               "operacoes/sla"
+            ]
+          },
+          {
+            "group": "Integrações",
+            "pages": [
+              "integracoes/conectores",
+              "integracoes/contatos-de-campanha",
+              "canais/conexao-via-api"
+            ]
+          },
+          {
+            "group": "Faturamento",
+            "pages": [
+              "faturamento/assinatura",
+              "faturamento/consumo-de-ia",
+              "faturamento/mensagens-e-conversas"
             ]
           },
           {
             "group": "Gestão",
             "pages": [
+              "administracao/informacoes",
               "administracao/empresas-e-unidades",
               "administracao/usuarios-e-permissoes",
               "avaliacao/conversas",
               "avaliacao/atendentes"
+            ]
+          },
+          {
+            "group": "Conta",
+            "pages": [
+              "conta/configuracoes-de-usuario",
+              "conta/sessoes-ativas"
             ]
           }
         ]
