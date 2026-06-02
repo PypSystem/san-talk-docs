@@ -10,6 +10,10 @@ A página de usuários fica em **Configurações &rarr; Usuários** ([talk.sanin
 
 ## Visão geral da página
 
+<Frame caption="Lista de usuários com filtros (Todos / Empresa / Áreas / Unidades), selo de Admin da assinatura e badges de papel.">
+  <img src="/images/usuarios/lista-usuarios.jpg" alt="Lista de usuários" />
+</Frame>
+
 A tela é dividida em três partes:
 
 - **Filtros**: `Todos`, `Empresa`, `Áreas`, `Unidades` — cada aba mostra um contador com a quantidade de usuários que possuem aquele tipo de acesso.
@@ -86,6 +90,10 @@ Clique em **+ Adicionar Usuário** para abrir o assistente. Ele tem **4 etapas**
 
     - **Criar Novo Usuário**: informe **Nome** e **E-mail**. Ele receberá um e-mail para definir a senha no primeiro acesso.
     - **Vincular Existente**: selecione na lista um usuário que já pertence à empresa para adicionar novos contextos de acesso. Ao escolher, o assistente já preenche automaticamente os acessos atuais — você pode adicionar, alterar ou remover papéis a partir daí.
+
+    <Frame caption="Etapa 1 — escolha entre criar um novo usuário ou vincular alguém que já pertence à empresa.">
+      <img src="/images/usuarios/wizard-etapa-1-usuario.png" alt="Wizard etapa 1 — Usuário" />
+    </Frame>
   </Step>
 
   <Step title="Contextos">
@@ -96,6 +104,10 @@ Clique em **+ Adicionar Usuário** para abrir o assistente. Ele tem **4 etapas**
     - **Unidades** indentadas abaixo da Área a que pertencem
 
     Você pode selecionar quantos quiser — Empresa + várias Áreas + várias Unidades — em um único fluxo.
+
+    <Frame caption="Etapa 2 — árvore de contextos: Empresa, Áreas e Unidades indentadas.">
+      <img src="/images/usuarios/wizard-etapa-2-contextos.png" alt="Wizard etapa 2 — Contextos" />
+    </Frame>
 
     <Warning>
       Você precisa selecionar **pelo menos um contexto** para avançar.
@@ -109,6 +121,10 @@ Clique em **+ Adicionar Usuário** para abrir o assistente. Ele tem **4 etapas**
     - **Unidade** permite **Proprietário**, **Gestor**, **Gerente** ou **Atendente**.
 
     Quando você seleciona uma Área e Unidades filhas, elas aparecem agrupadas para facilitar a atribuição.
+
+    <Frame caption="Etapa 3 — um seletor de papel por contexto. As opções variam conforme o nível (Empresa, Área ou Unidade).">
+      <img src="/images/usuarios/wizard-etapa-3-papeis.png" alt="Wizard etapa 3 — Papéis" />
+    </Frame>
   </Step>
 
   <Step title="Confirmar">
@@ -116,6 +132,10 @@ Clique em **+ Adicionar Usuário** para abrir o assistente. Ele tem **4 etapas**
 
     - **Novo usuário**: um convite é enviado por e-mail.
     - **Usuário existente**: as alterações são aplicadas imediatamente.
+
+    <Frame caption="Etapa 4 — resumo com o usuário e todos os acessos a serem atribuídos antes de confirmar.">
+      <img src="/images/usuarios/wizard-etapa-4-confirmar.png" alt="Wizard etapa 4 — Confirmar" />
+    </Frame>
   </Step>
 </Steps>
 
@@ -151,6 +171,10 @@ O painel **Gerenciar Acessos** tem duas abas:
 
 - **Acessos Atuais**: lista cada vínculo. Passando o mouse sobre uma linha aparecem dois botões — **Editar** (troca o papel inline) e **Remover** (revoga aquele acesso específico).
 - **Adicionar Acesso**: usa a mesma árvore + atribuição de papéis do assistente, mas oculta os contextos que o usuário já possui para evitar duplicidade.
+
+<Frame caption="Painel Gerenciar Acessos — aba Acessos Atuais com os vínculos agrupados (Empresa, Área e a Unidade filha indentada).">
+  <img src="/images/usuarios/gerenciar-acessos.png" alt="Painel Gerenciar Acessos" />
+</Frame>
 
 <Warning>
   Para o **Administrador da assinatura** este painel é apenas de leitura — os acessos dele estão protegidos contra alteração e remoção.
