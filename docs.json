@@ -95,6 +95,7 @@
             "pages": [
               "integracoes/conectores",
               "integracoes/contatos-de-campanha",
+              "integracoes/webhook-de-atendimento",
               "canais/conexao-via-api"
             ]
           },
@@ -180,7 +181,9 @@
       "name": "Authorization"
     }
   },
-  "openapi": ["/api-reference/openapi.json"],
+  "openapi": [
+    "/api-reference/openapi.json"
+  ],
   "contextual": {
     "options": [
       "copy",
