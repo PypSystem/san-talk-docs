@@ -63,10 +63,16 @@ não entra na docs.
 
 ## 4. Assets
 
-- `logo/light.svg` — símbolo + wordmark em **tinta** `#14120F` (sobre papel).
-- `logo/dark.svg` — em **papel** `#FAF7F0` (sobre tinta).
-- `favicon.svg` — tinta `#14120F`.
-- Logo é **monocromático** — sem azul, sem gradiente.
+A marca é o **símbolo do produto** (mesmo `BrandSymbol` do san-web): balão com dois "moradores" —
+ponto **terracota** (equipe) e nó em **gradiente** terracota→cobalto (IA; o nó do símbolo é um dos
+raros usos legítimos do gradiente). Os dois pontos têm cores fixas nos dois temas; balão e wordmark
+seguem o tema.
+
+- `logo/light.svg` — balão + wordmark **"talk ai"** (Schibsted 800, minúsculo, em paths) em
+  **tinta** `#14120F`.
+- `logo/dark.svg` — idem em **papel** `#FAF7F0`.
+- `favicon.svg` — só o símbolo (balão tinta + pontos da marca).
+- O wordmark é vetorizado (paths) porque `<img>` não carrega fontes externas de dentro do SVG.
 - Screenshots do produto: capturar já no DS papel/tinta (nada do tema azul antigo).
 
 ---
