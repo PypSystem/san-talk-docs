@@ -8,7 +8,7 @@ Product documentation for **SAN Talk AI platform**, a customer communication and
 - **Content Format**: Markdown (`.md`) and MDX (`.mdx`) for interactive components
 - **Configuration**: `docs.json` for site structure and navigation
 - **API Docs**: OpenAPI spec at `/api-reference/openapi.json`
-- **Styling**: Mint theme with custom branding (blue: `#004bad`)
+- **Styling**: Mint theme com o DS **papel/tinta** (accent tinta `#14120F`, fundo papel `#FAF7F0`; fonte da verdade: `DESIGN_SYSTEM.md` — atalhos `/ds` e subagente `design-system`)
 
 ## Quick Start
 ```bash
@@ -49,7 +49,7 @@ mintlify build
 The `docs.json` file defines:
 - **Navigation structure**: Two main tabs ("Documentação" and "API Reference")
 - **Page groupings**: Logical organization of content by feature area
-- **Theme colors**: Primary blue, light, and dark variants
+- **Theme colors**: papel/tinta — accent tinta `#14120F`, fundo papel `#FAF7F0` (claro) / tinta (escuro); fontes Schibsted + Hanken (regras em `DESIGN_SYSTEM.md`)
 - **API settings**: Base URL (`https://api-talk.saninternet.com/v1`), Bearer token auth
 - **Links**: Dashboard button, website footer link
 - **Context options**: Copy, view, ChatGPT, Claude sharing from docs

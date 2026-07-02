@@ -1,0 +1,15 @@
+/* ============================================================
+   SAN Talk Docs — ajustes do DS papel/tinta sobre o tema Mint.
+   Cores, fontes e fundo vivem em docs.json (fonte da verdade).
+   Aqui só o que o docs.json não cobre: a voz mono do código.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap');
+
+/* Código é linguagem de máquina — IBM Plex Mono (voz da IA no DS) */
+code,
+pre,
+kbd,
+samp {
+  font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+}

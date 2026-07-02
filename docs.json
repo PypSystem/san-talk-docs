@@ -3,20 +3,14 @@
   "theme": "mint",
   "name": "Talk AI",
   "colors": {
-    "primary": "#004bad",
-    "light": "#1875f0",
-    "dark": "#003d8f"
+    "primary": "#14120F",
+    "light": "#FAF7F0",
+    "dark": "#14120F"
   },
   "appearance": {
     "default": "light"
   },
   "favicon": "/favicon.svg",
-  "rounded": "relaxed",
-  "font": {
-    "headings": {
-      "weight": 700
-    }
-  },
   "navigation": {
     "tabs": [
       {
@@ -199,6 +193,21 @@
   "footer": {
     "socials": {
       "website": "https://talk.saninternet.com"
+    }
+  },
+  "background": {
+    "color": {
+      "light": "#FAF7F0",
+      "dark": "#14120F"
+    }
+  },
+  "fonts": {
+    "heading": {
+      "family": "Schibsted Grotesk",
+      "weight": 700
+    },
+    "body": {
+      "family": "Hanken Grotesk"
     }
   }
 }
