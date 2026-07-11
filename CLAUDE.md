@@ -1,7 +1,7 @@
 # SAN Talk Docs - CLAUDE.md
 
 ## Overview
-Product documentation for **SAN Talk AI platform**, a customer communication and AI assistant system. Built with Mintlify for beautiful, maintainable API and product documentation.
+Product documentation for **Tartini** (product formerly named "SAN Talk AI" / "Talk AI") — the first tool of our **Plataforma de IA para Empresas**. Tartini = **comunicação omnichannel + gestão de equipe com IA**; it **has** atendimento tools but is **not** positioned as a customer-service/helpdesk product (atendimento is one capability, not the identity). Built with Mintlify. NOTE: the public docs have been rebranded to **Tartini** (docs lead the product UI, which still says "SAN Talk AI"/"Talk"/"atendimento" and hasn't rebranded) — keep new pages on the **Tartini** name and the platform/communication positioning, and never rename URLs/domains (`talk.saninternet.com`) or API keys (`pyp_live_`).
 
 ## Stack
 - **Framework**: Mintlify (documentation site generator)
@@ -27,7 +27,7 @@ mintlify build
 ### Content Organization
 - **`administracao/`** - Admin console features (companies, users, permissions)
 - **`api-reference/`** - API documentation and OpenAPI spec
-- **`atendimento/`** - Customer support features (conversations, copilot, widget)
+- **`atendimento/`** - Communication / inbox features (conversations, copilot, widget) — *a use case, not the product's identity*
 - **`avaliacao/`** - Evaluation and feedback system
 - **`base-de-conhecimento/`** - Knowledge base (documents, Q&A, websites)
 - **`campanhas/`** - Campaign creation and metrics

@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Talk AI",
+  "name": "Tartini",
   "colors": {
     "primary": "#14120F",
     "light": "#FAF7F0",
